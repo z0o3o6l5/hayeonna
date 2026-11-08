@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Annyeong Market: the creative portfolio of Hayeon Na, mechanical engineering student at NYU Tandon.">
-<title>Annyeong Market</title>
+<meta name="description" content="Annyeong: the creative portfolio of Hayeon Na, mechanical engineering student at NYU Tandon.">
+<title>Annyeong</title>
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -406,9 +406,9 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 
 <header class="mast">
   <div class="wrap mast-in">
-    <a class="brand" href="#top" aria-label="Annyeong Market, back to top">
-      <span class="brand-word">ANNYEONG<em>MARKET</em></span>
-      <span class="brand-sub">Fresh Engineering, Daily. · 안녕 마켓</span>
+    <a class="brand" href="#top" aria-label="Annyeong, back to top">
+      <span class="brand-word">ANNYEONG</span>
+      <span class="brand-sub">Fresh Engineering, Daily. · 안녕</span>
     </a>
     <nav class="aisle-nav" aria-label="Aisles" id="aisleNav"></nav>
     <button class="mast-btn" id="catalogBtn" aria-label="Open the full catalog">
@@ -457,7 +457,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
         <article class="idcard" aria-label="Employee ID card">
           <div class="id-inner">
             <div class="photo"><span>PHOTO</span></div>
-            <div class="id-brand"><b>ANNYEONG</b><span>MARKET</span></div>
+            <div class="id-brand"><b>ANNYEONG</b><span>안녕</span></div>
             <div class="valid">VALID EMPLOYEE · 2026 / 2027</div>
             <div class="fld f1"><div class="v">H. Na</div><label>Employee</label></div>
             <div class="fld f2"><div class="v">Mechanical Eng.</div><label>Department</label></div>
@@ -533,7 +533,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 
 <footer class="foot">
   <div class="rcpt" data-reveal>
-    <h2>ANNYEONG MARKET</h2>
+    <h2>ANNYEONG</h2>
     <div class="c">FRESH ENGINEERING, DAILY<br>BROOKLYN, NY</div>
     <hr>
     <table>
@@ -661,7 +661,7 @@ function openProduct(id){
   s.innerHTML=`<div class="pd" role="dialog" aria-modal="true" aria-label="${it.name}">
     <div class="stage"><div class="flip" id="flip">
       <div class="face front" style="background-color:${it.bg};--fg:${it.fg}">
-        <div class="maker">${(it.maker||a.name).toUpperCase()} · ANNYEONG MARKET</div>
+        <div class="maker">${(it.maker||a.name).toUpperCase()} · ANNYEONG</div>
         <div class="big">${it.name}</div>
         <div class="sub">${it.sub}</div>
         <div class="shot">[ Main result photo or render ]</div>
@@ -729,7 +729,7 @@ function receipt(){
   const s=$("#scrim");
   s.innerHTML=`<div style="width:100%;display:grid;gap:16px;justify-items:center" role="dialog" aria-modal="true" aria-label="Receipt">
     <div class="rcpt printing">
-      <h4>ANNYEONG MARKET</h4><div class="c">BROOKLYN, NY · LANE 1</div><hr>
+      <h4>ANNYEONG</h4><div class="c">BROOKLYN, NY · LANE 1</div><hr>
       ORDER #0001 FOR: YOU<br>${d}<hr>
       <table><tr><td>QTY</td><td>ITEM</td><td>AISLE</td></tr>
       ${list.map((id,k)=>{const it=byId(id);return `<tr><td>${String(k+1).padStart(2,"0")}</td><td>${it.name.toUpperCase()}</td><td>${aisleOf(it).n}</td></tr>`}).join("")}

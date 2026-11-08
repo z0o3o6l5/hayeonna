@@ -1,4 +1,4 @@
-# Annyeong Market
+# Annyeong
 
 Creative portfolio of Hayeon Na, built as an interactive retro supermarket.
 
