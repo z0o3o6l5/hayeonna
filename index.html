@@ -286,7 +286,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 @keyframes print{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
 
 /* ---------- overlays ---------- */
-.scrim{position:fixed;inset:0;z-index:50;background:rgba(34,32,29,.62);display:grid;place-items:center;overflow-y:auto;padding:max(20px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(20px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.scrim{position:fixed;inset:0;z-index:50;background:rgba(34,32,29,.62);display:grid;place-items:safe center;overflow-y:auto;padding:max(20px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(20px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
 .pd{width:100%;max-width:880px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:26px;align-items:start}
 .stage{perspective:1400px}
 .flip{position:relative;width:100%;max-width:430px;margin:0 auto;aspect-ratio:3/4;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.3,1.25,.5,1)}
@@ -315,6 +315,10 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .lrows div{display:flex;justify-content:space-between;gap:10px;border-top:1px dashed var(--ink);padding:5px 0}
 .lrows div span:last-child{font-weight:700;text-align:right}
 .btnrow{display:grid;gap:8px}
+.directions{font-size:14px;line-height:1.4;border-top:2px solid var(--ink);padding-top:8px}
+.directions b{font-family:var(--mono);font-size:12px;color:var(--red)}
+.directions ol{margin:6px 0 0;padding-left:20px;display:grid;gap:5px}
+a.btn.linkout{display:block;text-align:center;color:var(--ink);text-decoration:none;border-style:dashed}
 .btn{border:2px solid var(--ink);background:var(--cream);padding:11px 14px;font-family:var(--head);font-stretch:62%;font-weight:900;text-transform:uppercase;font-size:20px;line-height:1;transition:transform .15s}
 .btn:hover{transform:translateY(-2px)}
 .btn.primary{background:var(--blue);color:var(--cream)}
@@ -578,7 +582,7 @@ const ITEMS=[
   {id:"rogue",code:"04",aisle:"experience",pkg:"box",bg:C.Y,fg:C.R,ac:C.B,maker:"NYU ROGUE AERO",logo:"Aero<br>Struct<br>O's",ls:36,tag:"Rocket crunch",name:"Aerostructures",sub:"Aerostructure Engineer on NYU Rogue Aerospace.",hl:"[Highlight]",serving:"[Duration]",role:"Aerostructure Engineer",facts:[["Parts owned","[#]"],["Launches","[#]"],["Team size","[#]"],["Key result","[metric]"]],ing:"[Composites, CAD, FEA…]"},
   {id:"tmtdc",code:"05",aisle:"creative",pkg:"box",bg:C.R,fg:C.Y,ac:C.B,maker:"THRILL DESIGN COMP",logo:"Oz<br>Coaster<br>Flakes",ls:34,tag:"Show design",name:"Oz Coaster Show",sub:"Show design for an Oz themed roller coaster in the Thrill Design Competition.",hl:"Finalist",special:"Final!",serving:"[Duration]",role:"Show Design",facts:[["Show scenes","[#]"],["Track length","[ft]"],["Team size","[#]"],["Key result","Finalist"]],ing:"[Story, show sets, effects, ride path…]"},
   {id:"sketch",code:"06",aisle:"creative",pkg:"bag",bg:C.K,fg:C.Y,ac:C.R,logo:"Next<br>Piece",ls:34,tag:"Coming soon",name:"[Next Creative Piece]",sub:"Shelf space reserved for a render or concept sketch.",hl:"[Highlight]",serving:"[Duration]",role:"[Role]",facts:[["[Fact]","[value]"],["[Fact]","[value]"]],ing:"[Tools]"},
-  {id:"ta",code:"07",aisle:"leadership",pkg:"can",bg:C.B,fg:C.Y,ac:C.R,logo:"Lab<br>TA",ls:24,tag:"General engineering",name:"General Engineering TA",sub:"Undergraduate TA: weekly lab part checks, purchasing and the lab budget.",hl:"[Students supported]",serving:"[Duration]",role:"Undergraduate TA",facts:[["Students","[#]"],["Lab sections","[#]"],["Budget managed","[$]"],["Key result","[metric]"]],ing:"[Inventory checks, purchasing, reviews…]"},
+  {id:"ta",code:"07",aisle:"leadership",pkg:"can",bg:C.B,fg:C.Y,ac:C.R,maker:"NYU TANDON GEN ENG",logo:"Lab<br>TA",ls:24,tag:"Inventory committee",name:"General Engineering TA & Inventory Committee",sub:"Head of Inventory Committee and Peer Leader, NYU Tandon General Engineering Department.",hl:"Every team succeeds",special:"Staff",serving:"Sep 2025 to Present",role:"Head of Inventory Committee & Peer Leader",facts:[["Students per semester","400+"],["Annual parts budget","$21,000"],["Teams mentored","2 per semester"],["Circuits lab success","1 team → all teams"]],ing:"Inventory control, purchasing, component repair (Raspberry Pi, Arduino, motors), kit packing, milestone reviews, technical manuals",duties:["Manage parts, purchasing and repair for 400+ students' projects each semester within a $21,000 annual budget.","Inspect, repair and prepare lab stock, packing every kit item by item against its checklist.","Personal project: writing repair manuals for Raspberry Pi, Arduino, motors and other lab components.","Personal project: designing a demand driven system for procurement and distribution, the most confusing part of every semester, within budget.","As Peer Leader, I set and review milestone tasks for 2 project teams each semester. Purchase lists, technical issues and schedules all go through my review.","As Peer Leader, I wrote simple circuits lab manuals that follow the lab guidelines. Before, only 1 team in the class succeeded. Teaching my section with them, every team has succeeded and extracted its data every semester."],links:[["Demand Planner · Excel","files/Lab_Parts_Demand_Planner.xlsx"]]},
   {id:"iaapa",code:"08",aisle:"leadership",pkg:"bottle",bg:C.R,fg:C.Y,ac:C.Y,logo:"IAAPA",ls:20,tag:"Asia Expo 2026",name:"IAAPA Show Ambassador",sub:"Show Ambassador at IAAPA Asia Expo 2026.",hl:"[Highlight]",serving:"2026",role:"Show Ambassador",facts:[["Attendees met","[#]"],["Days","[#]"],["Key result","[metric]"]],ing:"[Industry networking, guest relations…]"},
   {id:"club",code:"09",aisle:"leadership",pkg:"bag",bg:C.Y,fg:C.R,ac:C.B,logo:"Eng<br>Club",ls:38,tag:"Social mix",name:"Engineering Social Club",sub:"Founder of an informal social club for engineering students.",hl:"[Members]",serving:"[Duration]",role:"Founder",facts:[["Members","[#]"],["Events","[#]"],["Key result","[metric]"]],ing:"[Events, posters, community…]"}
 ];
@@ -662,7 +666,7 @@ function openProduct(id){
     <div class="stage"><div class="flip" id="flip">
       <div class="face front" style="background-color:${it.bg};--fg:${it.fg}">
         <div class="maker">${(it.maker||a.name).toUpperCase()} · ANNYEONG</div>
-        <div class="big">${it.name}</div>
+        <div class="big"${it.name.length>30?` style="font-size:clamp(34px,5.6vw,56px)"`:""}>${it.name}</div>
         <div class="sub">${it.sub}</div>
         <div class="shot">[ Main result photo or render ]</div>
         <div class="hl">${it.hl}</div>
@@ -681,7 +685,9 @@ function openProduct(id){
       <h3>${it.name}</h3>
       <p>${it.sub}</p>
       <div class="lrows"><div><span>ROLE</span><span>${it.role}</span></div><div><span>SERVING</span><span>${it.serving}</span></div><div><span>HIGHLIGHT</span><span>${it.hl}</span></div></div>
+      ${it.duties?`<div class="directions"><b>DIRECTIONS FOR USE</b><ol>${it.duties.map(d=>`<li>${d}</li>`).join("")}</ol></div>`:""}
       <div class="btnrow">
+        ${(it.links||[]).map(l=>`<a class="btn linkout" href="${l[1]}" download>${l[0]} ↓</a>`).join("")}
         <button class="btn promo" id="flipBtn">Turn the box around ↻</button>
         <button class="btn primary" id="addBtn" ${inc?"disabled":""}>${inc?"In your cart ✓":"Add to cart +"}</button>
         <button class="btn" data-close="scrim">Back to the shelf</button>
@@ -690,7 +696,7 @@ function openProduct(id){
   s.hidden=false;
   $("#flipBtn").onclick=()=>$("#flip").classList.toggle("back");
   $("#addBtn").onclick=e=>{addToCart(id,$("#flip"));e.currentTarget.disabled=true;e.currentTarget.textContent="In your cart ✓"};
-  $("#flipBtn").focus();
+  $("#flipBtn").focus({preventScroll:true});
 }
 
 function addToCart(id,fromEl){
