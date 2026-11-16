@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Annyeong: the creative portfolio of Hayeon Na, mechanical engineering student at NYU Tandon.">
-<title>Annyeong</title>
+<meta name="description" content="Annyeong: the creative portfolio of Hayeon (Kristine) Na, mechanical engineering student at NYU Tandon.">
+<title>Annyeong · Hayeon (Kristine) Na</title>
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -427,7 +427,37 @@ a.btn.linkout{display:block;text-align:center;color:var(--ink);text-decoration:n
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
-.crow a,.rcpt a,.cat-foot a{color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700}</style>
+.crow a,.rcpt a,.cat-foot a{color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700}
+.aka{margin:14px 0 0;text-align:center;font-family:var(--mono);font-size:clamp(13px,1.3vw,16px);letter-spacing:.04em;color:var(--ink-2)}
+.aka b{color:var(--blue)}
+.qf{margin-top:8px;max-width:170px;text-align:center;font:700 12px/1.3 var(--mono);color:var(--ink);background:var(--paper);border:1.5px dashed var(--ink);padding:3px 8px}
+.qf-ad{margin:10px 0 0;font:700 13px var(--mono);color:var(--blue)}
+.deal small{font-size:12px!important;font-weight:700}
+.front .shot.metric-board{display:flex;flex-direction:column;justify-content:center;align-items:stretch;place-items:initial;gap:14px;background:var(--paper);padding:18px 20px;text-align:left}
+.metric-board .mb-row{display:flex;flex-direction:column;border-bottom:2px dashed var(--ink);padding-bottom:8px}
+.metric-board .mb-row:last-of-type{border-bottom:0}
+.metric-board .mb-row b{font-family:var(--head);font-stretch:62%;font-weight:900;font-size:clamp(34px,5.2vw,64px);line-height:1;color:var(--red)}
+.metric-board .mb-row span{font:700 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink);margin-top:4px}
+.metric-board .mb-note{font:11px var(--mono);color:var(--ink-2);text-align:right}
+/* ---------- mobile layout ---------- */
+@media (max-width:640px){
+  .signs{grid-template-columns:1fr!important;gap:8px}
+  .sign-btn .hang{display:none}
+  .board{grid-template-columns:48px minmax(0,1fr)}
+  .board .no{font-size:32px}
+  .board .nm{padding:9px 12px}
+  .board .nm b{font-size:22px}
+  .board .nm span{margin-top:3px;font-size:11px;white-space:normal}
+  .hero-art{margin-top:56px!important}
+  .sign-btn .here{display:none}
+  .shelf-items{gap:26px 14px}
+  .item{width:calc(50% - 7px)}
+  .qf{max-width:100%;font-size:11px}
+  .metric-board .mb-row b{font-size:32px}
+  .front .shot.metric-board{padding:14px 16px;gap:10px}
+  .front.has-board .hl{display:none}
+}
+</style>
 </head>
 <body>
 
@@ -461,10 +491,11 @@ a.btn.linkout{display:block;text-align:center;color:var(--ink);text-decoration:n
         <span class="ghost" aria-hidden="true">Fresh</span>
         <p class="kicker">Today's Special:</p>
         <h1 class="special"><span>Hayeon</span><span>Na</span></h1>
+        <p class="aka">a.k.a. <b>Kristine Na</b> · 나하연</p>
       </div>
       <div class="hero-body">
         <p class="tagline">Fresh Ideas. Wild Imagination. <b>Engineered to Life.</b></p>
-        <p class="intro">I'm Hayeon, a mechanical engineering student at NYU Tandon. I use engineering to give people a moment they'll remember. When that moment is shared and passed along, it becomes a common experience and a common wish that connects one generation to the next.</p>
+        <p class="intro">I'm Hayeon, also known as Kristine, a mechanical engineering student at NYU Tandon. I use engineering to give people a moment they'll remember. When that moment is shared and passed along, it becomes a common experience and a common wish that connects one generation to the next.</p>
         <div class="hero-cta">
         <div class="hero-actions">
           <a class="coupon" href="#aisles"><span class="stub">COUPON</span><span class="body"><b>Browse the Aisles →</b><small>Valid in all 4 aisles. No limit per customer.</small></span></a>
@@ -489,7 +520,7 @@ a.btn.linkout{display:block;text-align:center;color:var(--ink);text-decoration:n
             <div class="photo"><span>PHOTO</span></div>
             <div class="id-brand"><b>ANNYEONG</b><span>안녕</span></div>
             <div class="valid">VALID EMPLOYEE · 2026 / 2027</div>
-            <div class="fld f1"><div class="v">H. Na</div><label>Employee</label></div>
+            <div class="fld f1"><div class="v">Hayeon (Kristine) Na</div><label>Employee</label></div>
             <div class="fld f2"><div class="v">Mechanical Eng.</div><label>Department</label></div>
             <div class="sticker"><span>NYU<br>'27</span></div>
             <div class="sig"><div class="v">Hayeon Na</div><label>Signature</label></div>
@@ -576,7 +607,7 @@ a.btn.linkout{display:block;text-align:center;color:var(--ink);text-decoration:n
     <hr>
     <div class="c">THANK YOU FOR SHOPPING<br>PLEASE COME AGAIN · 또 오세요</div>
     <div class="bars" aria-hidden="true"></div>
-    <div class="c" style="margin-top:8px">© 2026 HAYEON NA</div>
+    <div class="c" style="margin-top:8px">© 2026 HAYEON (KRISTINE) NA</div>
   </div>
 </footer>
 
@@ -652,6 +683,7 @@ function renderSpecials(){
       <span class="ad-no">Item No. ${it.code} · Aisle ${aisleOf(it).n}</span>
       <h3>${it.name}</h3>
       <p>${it.sub}</p>
+      ${QF[it.id]?`<p class="qf-ad">${QF[it.id]}</p>`:""}
       <div class="deal"><b>${deals[k][0]}</b><small>${deals[k][1]}</small></div>
       <div class="ad-actions">
         <button class="ptag" data-add="${it.id}">No. ${it.code} <b>${cart.includes(it.id)?"IN CART ✓":"ADD +"}</b></button>
@@ -666,11 +698,13 @@ function renderSigns(){
       <span class="board"><span class="no">${a.n}</span><span class="nm"><b>${a.name}</b><span>${a.sub}</span></span></span>
       <span class="here">▲ YOU ARE HERE</span></button>`}).join("");
 }
+const MB={"lift": [["68%", "Lighter structure, 137.3 → 44.1 lb"], ["412 vs 824 psi", "Worst case pressure, halved"], ["45.2 MPa", "Max stress under full load"]], "manip": [["$1,400", "Build budget"], ["87%", "Sprint completion"], ["$238.80 vs $128", "Per joint actuation trade study"]], "mount": [["4", "CAD iterations"], ["3", "Prints"], ["v2", "Slide in sleeve, swap without disassembly"]], "srim": [["8", "Actuator designs drawn"], ["3", "Actuation behaviors verified"], ["8 × 8 cm", "Design envelope"]], "rogue": [["1.65 cal", "Stability"], ["519 ft", "Predicted apogee"], ["6 oz", "Fiberglass chosen over 16 oz"]]};
+const QF={"manip": "$1,400 · 87% sprints", "mount": "4 CAD iterations", "lift": "68% lighter", "solitecture": "$46.1M estimate", "srim": "8 designs · 3 verified", "rogue": "1.65 cal · 519 ft", "tmtdc": "Finalist of 40 teams", "ecopark": "4 campaigns", "reels": "916K views", "vip": "PM of a 5 person team", "ta": "$21K budget · 400+ students", "iaapa": "5,400+ attendees"};
 function itemHTML(it){
   const inc=cart.includes(it.id);
   return `<div class="item ${inc?"in-cart":""}">
     <button class="product" data-open="${it.id}" aria-label="View ${it.name}">${pkgHTML(it)}</button>
-    <button class="ptag" data-add="${it.id}" aria-label="${inc?"In cart":"Add to cart"}: ${it.name}">No. ${it.code} <b>${inc?"IN CART ✓":"ADD +"}</b></button></div>`;
+    <button class="ptag" data-add="${it.id}" aria-label="${inc?"In cart":"Add to cart"}: ${it.name}">No. ${it.code} <b>${inc?"IN CART ✓":"ADD +"}</b></button>${QF[it.id]?`<span class="qf">${QF[it.id]}</span>`:""}</div>`;
 }
 function renderUnit(){
   const a=AISLES.find(x=>x.id===current);
@@ -695,11 +729,11 @@ function openProduct(id){
   const s=$("#scrim");
   s.innerHTML=`<div class="pd" role="dialog" aria-modal="true" aria-label="${it.name}">
     <div class="stage"><div class="flip${it.photos?" photo-flip":""}" id="flip">
-      <div class="face front${it.photos?" has-photos":""}" style="background-color:${it.bg};--fg:${it.fg}">
+      <div class="face front${it.photos?" has-photos":" has-board"}" style="background-color:${it.bg};--fg:${it.fg}">
         <div class="maker">${(it.maker||a.name).toUpperCase()} · ANNYEONG</div>
         <div class="big"${(it.front||it.name).split(" ").some(w=>w.length>9)?` style="font-size:clamp(28px,4.4vw,46px)"`:((it.front||it.name).length>30||(it.front||it.name).split(" ").some(w=>w.length>8))?` style="font-size:clamp(34px,5.6vw,56px)"`:""}>${it.front||it.name}</div>
         <div class="sub">${it.sub}</div>
-        ${it.photos?`<figure class="shot has-photo"><a id="shotLink" href="${it.photos[0][0]}" title="View full size" data-k="0"><img id="shotImg" src="${it.photos[0][0]}" alt="${it.photos[0][1]}"></a><figcaption id="shotCap">${it.photos[0][1]}</figcaption></figure>`:`<div class="shot">[ Main result photo or render ]</div>`}
+        ${it.photos?`<figure class="shot has-photo"><a id="shotLink" href="${it.photos[0][0]}" title="View full size" data-k="0"><img id="shotImg" src="${it.photos[0][0]}" alt="${it.photos[0][1]}"></a><figcaption id="shotCap">${it.photos[0][1]}</figcaption></figure>`:`<div class="shot metric-board">${(MB[it.id]||(it.facts||[]).filter(f=>!/^\[/.test(f[1])).slice(0,3).map(f=>[f[1],f[0]])).map(f=>`<div class="mb-row"><b>${f[0]}</b><span>${f[1]}</span></div>`).join("")||`<div class="mb-row"><b>${it.hl}</b></div>`}<div class="mb-note">Photos coming soon</div></div>`}
         <div class="hl"${it.bg===C.Y?` style="background:var(--red);color:var(--yellow)"`:""}>${it.hl}</div>
         <div class="net"><span>NET WT. 1 PROJECT</span><span>ITEM No. ${it.code}</span></div>
       </div>
@@ -793,7 +827,7 @@ function receipt(){
       </table><hr>
       <table><tr><td>ITEM COUNT</td><td>${list.length}</td></tr><tr><td>ARTIFICIAL CREATIVITY</td><td>0%</td></tr><tr><td>TOTAL</td><td>1 GOOD HIRE</td></tr></table>
       ${cart.length?"":`<div class="c" style="margin-top:6px">(EMPTY CART, SO HERE'S EVERYTHING)</div>`}<hr>
-      <div>CASHIER: HAYEON NA</div>
+      <div>CASHIER: HAYEON (KRISTINE) NA</div>
       <div style="display:flex;justify-content:space-between;gap:8px;align-items:center;margin-top:4px"><span>hn2400@nyu.edu</span><button class="minibtn" data-copy="hn2400@nyu.edu">COPY</button></div>
       <div style="display:flex;justify-content:space-between;gap:8px;align-items:center;margin-top:4px"><span>TEL 332-277-0978</span><button class="minibtn" data-copy="332-277-0978">COPY</button></div>
       <div>CATALOG (RÉSUMÉ): <a href="files/Hayeon_Na_Resume.pdf" target="_blank" rel="noopener">OPEN PDF</a></div>
