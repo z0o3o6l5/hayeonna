@@ -99,7 +99,9 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .tagbtn::before{content:"";position:absolute;left:12px;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:var(--cream);box-shadow:inset 0 0 0 1.5px var(--ink)}
 .tagbtn:hover{transform:rotate(-4deg)}
 .hero-art{grid-column:8/13;grid-row:1;position:relative;min-height:440px;min-width:0}
-.stampwheel{position:absolute;top:-30px;right:-26px;width:118px;height:118px;z-index:4;animation:spin 36s linear infinite}
+.stampwheel{position:absolute;top:-46px;right:-54px;width:118px;height:118px;z-index:4;animation:spin 36s linear infinite}
+@media (max-width:1280px){.stampwheel{top:-64px;right:-14px}}
+@media (min-width:981px) and (max-width:1280px){.idcard .fld.f1 .v{font-size:min(19px,1.6vw)}}
 @keyframes spin{to{transform:rotate(360deg)}}
 .burst-big{position:absolute;left:-30px;top:250px;z-index:4;width:146px;height:146px;background:var(--yellow);clip-path:polygon(50% 0,59% 15%,75% 6%,76% 24%,94% 21%,86% 37%,100% 50%,86% 63%,94% 79%,76% 76%,75% 94%,59% 85%,50% 100%,41% 85%,25% 94%,24% 76%,6% 79%,14% 63%,0 50%,14% 37%,6% 21%,24% 24%,25% 6%,41% 15%);display:grid;place-items:center;text-align:center;transform:rotate(-10deg);animation:wobble 5s ease-in-out infinite alternate}
 @keyframes wobble{to{transform:rotate(-4deg) scale(1.03)}}
@@ -116,6 +118,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .id-inner::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 32%,rgba(255,255,255,.75) 44%,transparent 54%)}
 .photo{grid-area:photo;align-self:start;aspect-ratio:4/5;max-width:100%;border:2px solid var(--blue);padding:4px;background:#fff}
 .photo span{display:flex;align-items:flex-end;justify-content:center;height:100%;padding-bottom:4px;font:700 10px var(--mono);letter-spacing:.12em;color:var(--cream);background:radial-gradient(circle at 50% 40%,#e9cdb8 0 21%,transparent 22%),radial-gradient(ellipse at 50% 100%,var(--red) 0 44%,transparent 45%),#bcd0e8}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
 .id-brand{grid-area:brand;text-align:center;line-height:1}
 .id-brand b{display:block;font-family:var(--serif);font-weight:700;font-size:clamp(22px,3vw,30px);color:var(--blue);letter-spacing:.03em}
 .id-brand span{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:4px;font-family:var(--serif);font-weight:700;font-size:12px;letter-spacing:.45em;color:var(--red)}
@@ -518,11 +521,11 @@ a.btn.linkout{display:block;text-align:center;color:var(--ink);text-decoration:n
         </svg>
         <article class="idcard" aria-label="Employee ID card">
           <div class="id-inner">
-            <div class="photo"><span>PHOTO</span></div>
+            <div class="photo"><img src="img/hayeon-id.jpg" alt="Portrait of Hayeon (Kristine) Na" width="480" height="600" loading="eager"></div>
             <div class="id-brand"><b>ANNYEONG</b><span>안녕</span></div>
             <div class="valid">VALID EMPLOYEE · 2026 / 2027</div>
             <div class="fld f1"><div class="v">Hayeon (Kristine) Na</div><label>Employee</label></div>
-            <div class="fld f2"><div class="v">Mechanical Eng.</div><label>Department</label></div>
+            <div class="fld f2"><div class="v">Mech. Eng.</div><label>Department</label></div>
             <div class="sticker"><span>NYU<br>'27</span></div>
             <div class="sig"><div class="v">Hayeon Na</div><label>Signature</label></div>
             <div class="idno">ID NO.<br>2027 2400</div>
